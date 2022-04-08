@@ -19,26 +19,25 @@ export default function Authenticate() {
     const [urlImage] = useState([]);
     const [urlString] = useState([]);
     
-  
-    console.log("auth const loaded")
+
     
     async function getNfts() {
       const options = { address: account, chain: chain, token_address: spotAnalogContract }
       const NFTs = await Moralis.Web3API.account.getNFTsForContract(options) 
-      console.log(NFTs);
       const setTotalOwned = NFTs.total;
-      console.log(setTotalOwned);
       const testValue = JSON.parse(NFTs.result[0].metadata);
       const urlString = JSON.stringify(testValue.image);
       console.log(urlString);
+      console.log(setTotalOwned);
+     
       
     };
-    
+   
 
     useEffect(() => {
        getNfts();
     }, [account])
-      
+   
 
     return (
       <div className="p-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 font-mono text-spot-yellow bg-slate-900">
