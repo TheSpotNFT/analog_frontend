@@ -12,9 +12,9 @@ export default function Authenticate() {
     /*const [filter, setFilter] = useState('');
     const [nftOwned, setNftOwned] = useState([])
     const [checkMyNfts, setCheckMyNfts] = useState([])
-    const [apiLoaded, setApiLoaded] = useState(false)*/
+    const [apiLoaded, setApiLoaded] = useState(false)
     const [totalOwned, setTotalOwned] = useState([]);
-    const [testValue, setTestValue] = useState([]);
+    const [testValue, setTestValue] = useState([]);*/
     const [testValueStr] = useState([]);
     const [urlImage] = useState([]);
     const [urlString] = useState([]);
@@ -29,8 +29,6 @@ export default function Authenticate() {
       const setTotalOwned = NFTs.total;
       console.log(setTotalOwned);
       const testValue = JSON.parse(NFTs.result[0].metadata);
-      console.log(testValue.image);
-      console.log(typeof testValue);
       const urlString = JSON.stringify(testValue.image);
       console.log(urlString);
       
