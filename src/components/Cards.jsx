@@ -20,10 +20,10 @@ function Card(props) {
         setVariation(props.image4)
         console.log(variation)
     } 
-    function commitVariation() {
+    /*function commitVariation() {
         setVariation(props.image5)
         console.log(variation)
-    } 
+    } */
 
 return(
 
@@ -45,7 +45,7 @@ return(
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
     hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={changeVariation4}>Variation 4</button>
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={commitVariation}>Commit Variation</button> 
+    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" /*onClick={commitVariation}*/>Commit Variation</button> 
         </div>
         </div>
       </div>
