@@ -32,7 +32,7 @@ export default function Authenticate() {
 
     useEffect(() => {
       getNfts();
-    });
+    },[]);
     
     return (
       <div className="p-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 font-mono text-spot-yellow bg-slate-900">
