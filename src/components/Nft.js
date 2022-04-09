@@ -47,17 +47,7 @@ export default function Authenticate() {
           image5 = {img2}
           id = "insert nft id from meta"
           />
-        <Card
-          key = "2"
-          nftName = "insert nft name prop"
-          variationType = "insert variation type from contract metadata"
-          image1 = {img1}
-          image2 = {img2}
-          image3 = {img3}
-          image4 = {img4}
-          image5 = {img2}
-          id = "insert nft id from meta"
-          />
+
         Nfts in your wallet: 
         
         </div>
