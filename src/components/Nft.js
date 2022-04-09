@@ -10,6 +10,7 @@ import img4 from "../images/4.png"
 
 
 export default function Authenticate() {
+    console.log("component rendering")
     const {account, isAuthenticated} = useMoralis();
     const userAddress = account
     const chain = 'avalanche';
@@ -31,10 +32,10 @@ export default function Authenticate() {
     
 
     useEffect(() => {
-      getNfts();
+     getNfts();
     },[]);
     
-    return (
+    /*return (
       <div className="p-10 grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 font-mono text-spot-yellow bg-slate-900">
         <Card
           key = "1"
@@ -53,7 +54,7 @@ export default function Authenticate() {
         </div>
           
   
-      )
+      )*/
 
     
          
