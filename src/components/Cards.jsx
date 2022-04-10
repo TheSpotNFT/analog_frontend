@@ -31,7 +31,7 @@ function Card(props) {
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
             params:{
-                _tokenID: 1, _variationID: 1
+                _tokenID: props.id, _variationID: 1
             }}
             
         await contractProcessor.fetch({
@@ -46,7 +46,7 @@ function Card(props) {
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
             params:{
-                _tokenID: 1, _variationID: 2
+                _tokenID: props.id, _variationID: 2
             }}
             
         await contractProcessor.fetch({
@@ -59,7 +59,7 @@ function Card(props) {
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
             params:{
-                _tokenID: 1, _variationID: 3
+                _tokenID: props.id, _variationID: 3
             }}
             
         await contractProcessor.fetch({
@@ -72,7 +72,7 @@ function Card(props) {
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
             params:{
-                _tokenID: 1, _variationID: 4
+                _tokenID: props.id, _variationID: 4
             }}
             
         await contractProcessor.fetch({
