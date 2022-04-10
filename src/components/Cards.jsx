@@ -27,12 +27,12 @@ function Card(props) {
 
     async function commitVariation1() {
         let options = {
-            contractAddress: "0xa647ff6da24f8fc86e1c8587fa562ccb1ab2d01a",
+            contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
             params:{
                 _tokenID: 1, _variationID: 1
-            },}
+            }}
             
         await contractProcessor.fetch({
             params: options
@@ -41,13 +41,43 @@ function Card(props) {
     }
 
     async function commitVariation2() {
-        
+        let options = {
+            contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
+            functionName: "changeVariation",
+            abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            params:{
+                _tokenID: 1, _variationID: 2
+            }}
+            
+        await contractProcessor.fetch({
+            params: options
+        })
     }
     async function commitVariation3() {
-        
+        let options = {
+            contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
+            functionName: "changeVariation",
+            abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            params:{
+                _tokenID: 1, _variationID: 3
+            }}
+            
+        await contractProcessor.fetch({
+            params: options
+        })
     }
     async function commitVariation4() {
-        
+        let options = {
+            contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
+            functionName: "changeVariation",
+            abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            params:{
+                _tokenID: 1, _variationID: 4
+            }}
+            
+        await contractProcessor.fetch({
+            params: options
+        })
     }
 return(
 

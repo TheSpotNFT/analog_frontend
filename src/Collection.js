@@ -13,7 +13,7 @@ const collection = [
     image2: "https://gateway.ipfs.io/ipfs/QmQEhsNhJWAWfZzNuuWqGXZNkuT6hsiE2QqKxaUr5DBnyH",
     image3: "https://gateway.ipfs.io/ipfs/QmctGLqkgsvxboKMPtt2GXp5mPH8inweXiv1mYhBXPMmB1",
     image4: "https://gateway.ipfs.io/ipfs/QmYLmaCDWzKebirkirjUUDQ8LCdYhSywb9G5BQYQVVssrT",
-    id: "1",
+    id: "2",
     name: "Birds Nest",
     
   },
@@ -22,7 +22,7 @@ const collection = [
     image2: "https://gateway.ipfs.io/ipfs/QmQEhsNhJWAWfZzNuuWqGXZNkuT6hsiE2QqKxaUr5DBnyH",
     image3: "https://gateway.ipfs.io/ipfs/QmctGLqkgsvxboKMPtt2GXp5mPH8inweXiv1mYhBXPMmB1",
     image4: "https://gateway.ipfs.io/ipfs/QmYLmaCDWzKebirkirjUUDQ8LCdYhSywb9G5BQYQVVssrT",
-    id: "1",
+    id: "3",
     name: "Birds Nest",
     
   },
@@ -31,7 +31,7 @@ const collection = [
     image2: "https://gateway.ipfs.io/ipfs/QmQEhsNhJWAWfZzNuuWqGXZNkuT6hsiE2QqKxaUr5DBnyH",
     image3: "https://gateway.ipfs.io/ipfs/QmctGLqkgsvxboKMPtt2GXp5mPH8inweXiv1mYhBXPMmB1",
     image4: "https://gateway.ipfs.io/ipfs/QmYLmaCDWzKebirkirjUUDQ8LCdYhSywb9G5BQYQVVssrT",
-    id: "1",
+    id: "4",
     name: "Birds Nest",
     
   },
