@@ -9,6 +9,8 @@ import Footer from "./components/Footer";
 import Home from "./pages"
 import Hero from "./components/Hero"
 import Nfts from "./components/Nft"
+import NftCollection from "./components/NftCollection"
+
 
 function App() {
   
@@ -20,7 +22,9 @@ function App() {
     const connectorId = window.localStorage.getItem("connectorId");
     if (isAuthenticated && !isWeb3Enabled && !isWeb3EnableLoading){
         enableWeb3({ provider: connectorId });}
-        //(chainId !== '0xa86a')&&switchNetwork("0xa86a")
+        //(chainId !== '0xa86a')&&switchNetwork("0xa86a") MAINNET
+        //(chainId !== '0xa869')&&switchNetwork("0xa869") FUJI
+
   }, [isAuthenticated, isWeb3Enabled, chain]);
 
     if (!isAuthenticated || account===null) {
@@ -34,7 +38,7 @@ function App() {
       <>
       
       <Navbar />
-      <Nfts />
+      <NftCollection />
 
       </>
       

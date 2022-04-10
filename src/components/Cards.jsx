@@ -1,30 +1,54 @@
 import React, { useState } from 'react';
+import { useMoralis, useWeb3ExecuteFunction } from "react-moralis";
+
 
 
 function Card(props) {
+ const { Moralis } = useMoralis();
+ const contractProcessor = useWeb3ExecuteFunction();
  const [variation, setVariation] = useState(props.image1)
- 
     
     function changeVariation1() {
         setVariation(props.image1)
+        
     }
     function changeVariation2() {
         setVariation(props.image2)
-        console.log(variation)
+      
     }
     function changeVariation3() {
         setVariation(props.image3)
-        console.log(variation)
+      
     } 
     function changeVariation4() {
         setVariation(props.image4)
-        console.log(variation)
+      
     } 
-    /*function commitVariation() {
-        setVariation(props.image5)
-        console.log(variation)
-    } */
 
+    async function commitVariation1() {
+        let options = {
+            contractAddress: "0xa647ff6da24f8fc86e1c8587fa562ccb1ab2d01a",
+            functionName: "changeVariation",
+            abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            params:{
+                _tokenID: 1, _variationID: 1
+            },}
+            
+        await contractProcessor.fetch({
+            params: options
+        })
+        
+    }
+
+    async function commitVariation2() {
+        
+    }
+    async function commitVariation3() {
+        
+    }
+    async function commitVariation4() {
+        
+    }
 return(
 
     
@@ -33,19 +57,17 @@ return(
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2"><h3>NFT Name: {props.nftName}</h3></div>
         <div className="text-slate-50 text-base">
-        <h4>Variation: {props.variationType}</h4>
         <h5>ID: {props.id}</h5>
         <div className="flex flex-col space-y-4 py-4">
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={changeVariation1}>Variation 1</button>
+    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onMouseEnter={changeVariation1} onClick={commitVariation1}>Variation 1 (Click to Commit)</button>
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={changeVariation2}>Variation 2</button>
+    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onMouseEnter={changeVariation2} onClick={commitVariation2}>Variation 2 (Click to Commit)</button>
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={changeVariation3}>Variation 3</button>
+    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onMouseEnter={changeVariation3} onClick={commitVariation3}>Variation 3 (Click to Commit)</button>
         <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onClick={changeVariation4}>Variation 4</button>
-        <button className="align-middle rounded-lg px-4 py-2 border-4 border-spot-yellow text-spot-yellow 
-    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" /*onClick={commitVariation}*/>Commit Variation</button> 
+    hover:bg-spot-yellow hover:text-black duration-300 hover:border-white font-mono text-l" onMouseEnter={changeVariation4} onClick={commitVariation4}>Variation 4 (Click to Commit)</button>
+ 
         </div>
         </div>
       </div>
@@ -55,5 +77,6 @@ return(
     
     
 )
+
 }
 export default Card;
