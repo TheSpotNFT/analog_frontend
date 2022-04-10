@@ -30,6 +30,7 @@ function Card(props) {
             contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            msgValue: Moralis.Units.ETH(1.0),
             params:{
                 _tokenID: props.id, _variationID: 1
             }}
@@ -45,6 +46,7 @@ function Card(props) {
             contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            msgValue: Moralis.Units.ETH(1.0),
             params:{
                 _tokenID: props.id, _variationID: 2
             }}
@@ -58,6 +60,7 @@ function Card(props) {
             contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            msgValue: Moralis.Units.ETH(1.0),
             params:{
                 _tokenID: props.id, _variationID: 3
             }}
@@ -71,6 +74,7 @@ function Card(props) {
             contractAddress: "0xc2A39aDc4b3445e130172CFa0F437BBE2264f730",
             functionName: "changeVariation",
             abi:[{"inputs": [{"internalType": "uint256","name": "_tokenID","type": "uint256"},{"internalType": "uint256","name": "_variationID","type": "uint256"}],"name": "changeVariation","outputs": [],"stateMutability": "payable","type": "function"}],
+            msgValue: Moralis.Units.ETH(1.0),
             params:{
                 _tokenID: props.id, _variationID: 4
             }}
